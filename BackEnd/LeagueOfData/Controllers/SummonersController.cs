@@ -1,6 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using LeagueDataAccess;
 using LeagueServices.SummonerService;
+using LeagueServices.SummonerService.Dto;
 using Microsoft.AspNetCore.Mvc;
 using static LeagueServices.SummonerService.QueryObjects.SummonerDtoFilter;
 
