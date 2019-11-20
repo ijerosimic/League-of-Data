@@ -61,7 +61,7 @@ namespace LeagueTests.UnitTests.LeagueServicesTests
                 var controller = new SummonersController(context);
 
                 var result = controller
-                    .Get(summonerName);
+                    .GetDetails(summonerName);
 
                 var okResult = result as OkObjectResult;
 
@@ -82,7 +82,7 @@ namespace LeagueTests.UnitTests.LeagueServicesTests
                 context.Database.EnsureCreated();
                 var controller = new SummonersController(context);
 
-                var result = controller.Get(summonerName);
+                var result = controller.GetDetails(summonerName);
 
                 var notFoundResult = result as NotFoundResult;
 
@@ -104,7 +104,7 @@ namespace LeagueTests.UnitTests.LeagueServicesTests
                 var controller = new SummonersController(context);
 
                 Assert.Throws<ArgumentException>(() =>
-                    controller.Get(summonerName));
+                    controller.GetDetails(summonerName));
             }
         }
     }
