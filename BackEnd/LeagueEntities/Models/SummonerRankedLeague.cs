@@ -14,7 +14,7 @@
         public bool IsInactive { get; set; }
         public int LeaguePoints { get; set; }
 
-        public string SummonerID { get; set; }
+        public int SummonerID { get; set; }
         public int QueueTypeID { get; set; }
 
         public Summoner Summoner { get; set; }

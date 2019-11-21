@@ -4,9 +4,7 @@ namespace LeagueEntities.Models
 {
     public class Summoner
     {
-        public string ID { get; set; }
-        public string AccountID { get; set; }
-        public string PuuID { get; set; }
+        public int ID { get; set; }
         public string SummonerName { get; set; }
         public int SummonerLevel { get; set; }
         public int Champion { get; set; }

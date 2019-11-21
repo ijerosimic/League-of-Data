@@ -8,9 +8,9 @@
         public int SeasonNo { get; set; }
         public string ServerName { get; set; }
 
-        public string SummonerID { get; set; }
+        public int SummonerID { get; set; }
         public int ChampionID { get; set; }
-        public long MatchID { get; set; }
+        public int MatchID { get; set; }
         
         public Summoner Summoner { get; set; }
         public Champion Champion { get; set; }

@@ -5,11 +5,10 @@ namespace LeagueEntities.Models
 {
     public class Match
     {
-        public long ID { get; set; }
+        public int ID { get; set; }
         public int SeasonNo { get; set; }
         public int MatchDuration { get; set; }
         public DateTime MatchCreation { get; set; }
-        public string GameVersion { get; set; }
         public string GameMode { get; set; }
         public string GameType { get; set; }
 

@@ -12,14 +12,6 @@ namespace LeagueEntities.EntityConfigurations
                 .HasMaxLength(100)
                 .IsRequired();
 
-            builder.Property(s => s.AccountID)
-                .HasMaxLength(100)
-                .IsRequired();
-
-            builder.Property(s => s.PuuID)
-                .HasMaxLength(100)
-                .IsRequired();
-
             builder.Property(s => s.SummonerName)
                 .HasMaxLength(100)
                 .IsRequired();
@@ -33,39 +25,31 @@ namespace LeagueEntities.EntityConfigurations
             builder.HasData(
                 new Summoner
                 {
-                    ID = "T9CKkCvw9-rvYCGLYkvE8FnP-LbcucxCUTvOcRL6R6HsV84",
-                    AccountID = "E5vIgzYH88uYhb9LGTKuQG3IEoV8j9ny7pSP-ifKuWsx5Q",
-                    PuuID = "rXHD2A-8BMKblRThMFtTGqWevjlg1X0qY55BbfI2p9D72KrU779EO2by4NHXhfkalED2bKX6_sbhMQ",
+                    ID = 1,
                     SummonerName = "golemko",
                     SummonerLevel = 133,
-                    ServerID = 2,
-                    ProfileIconNumber = 2
+                    ServerID = 1,
+                    ProfileIconNumber = 523
                 },
                 new Summoner
                 {
-                    ID = "m7AAGJrMEY_BO-doJ_kS7WtUu1Y3Co4VZC6uwQhkn960LKg",
-                    AccountID = "4gzX2nA07W0cRo07d2PzfwK8GsGsvnuhhhrl6nJmCiSh_HhsBaWzTF4B",
-                    PuuID = "IQ4P4RYUh2b9HKgQA7ToK-IFVOk7Om9Pgtu0zPRuRDcuq30DpWcMnGPfaVO-g_3_TfG9HXUnbjbmzg",
+                    ID = 2,
                     SummonerName = "Peasant Slayer",
                     SummonerLevel = 48,
-                    ServerID = 2,
-                    ProfileIconNumber = 4
+                    ServerID = 1,
+                    ProfileIconNumber = 1450
                 },
                 new Summoner
                 {
-                    ID = "V05Y-rXHSb-k4QVBqotnMg-h613l0FZ1nhHh6lZK1Hyq0FQ",
-                    AccountID = "huDSrcdoL641P1Cl_qb5Fn482RmH8CSnTVGnvWaI2Tntsg",
-                    PuuID = "wUU6zHnRHoPANkg8Hu-GzpDu2kSWW-Q-DUJr5em-rGIje82tfkLPyNf-lBS-r27dxuiOTAg2TNUYYg",
+                    ID = 3,
                     SummonerName = "Shimeshugar",
                     SummonerLevel = 99,
                     ServerID = 1,
-                    ProfileIconNumber = 554
+                    ProfileIconNumber = 1459
                 },
                 new Summoner
                 {
-                    ID = "-uVM7qgbYUtTbd9JwkAKguKkS6nj8jmm2fYPb2aOhT0N0sA",
-                    AccountID = "rKb2TFXFSOzaV_HkOCjlnFMXF7kSAPTVXLGkfGxkLBKU8Q",
-                    PuuID = "yQ4OOOwGe9cJXzndsssMNydOKKXqISSKrdY6L2xIPyDfy5CB1H-x6b4XTvwcfFWT6mvwL4rGFA7JFQ",
+                    ID = 4,
                     SummonerName = "Koomuch",
                     SummonerLevel = 90,
                     ServerID = 1,
@@ -73,9 +57,7 @@ namespace LeagueEntities.EntityConfigurations
                 },
                 new Summoner
                 {
-                    ID = "ICRohXMWj5jWzLJrxgH82_xYJypMhum3UG_ZkI9UecRJNWk",
-                    AccountID = "E5vIgzYH88uYhb9LGTKuQG3IEoV8j9ny7pSP-ifKuWsx5Q",
-                    PuuID = "C_XMHirlQ00s1Mg01HdI054DL3OPXo0EYMWuHO0xhqJs11RtZOvjdjifCJnm3x3KfsG1uQ76vjeqWQ",
+                    ID = 5,
                     SummonerName = "ubnix",
                     SummonerLevel = 47,
                     ServerID = 1,
@@ -83,13 +65,43 @@ namespace LeagueEntities.EntityConfigurations
                 },
                 new Summoner
                 {
-                    ID = "0sIa8mv2kdRhUicAKIb0pMCtA9eEYivCAfAW7ZGBZz5qlME0",
-                    AccountID = "_C6SbKcmVJlqt39rRSrezcQfQBbtF_AalXyoOpwK6Cl5wwkCj2tATFEt",
-                    PuuID = "fI3yFRsBsPj-M-BlsWxMRNQ15xjBVPx-af2DNhTma6F21r9231E-b61p36WyJ79ydFsIcqyZxNJcCg",
+                    ID = 6,
                     SummonerName = "Major Alexander",
                     SummonerLevel = 60,
-                    ServerID = 2,
-                    ProfileIconNumber = 3
+                    ServerID = 1,
+                    ProfileIconNumber = 3569
+                },
+                new Summoner
+                {
+                     ID = 7,
+                     SummonerName = "Major Alexander",
+                     SummonerLevel = 60,
+                     ServerID = 1,
+                     ProfileIconNumber = 3589
+                },
+                new Summoner
+                {
+                    ID = 8,
+                    SummonerName = "Bongiorno",
+                    SummonerLevel = 35,
+                    ServerID = 1,
+                    ProfileIconNumber = 3615
+                },
+                new Summoner
+                {
+                    ID = 9,
+                    SummonerName = "Nocturno",
+                    SummonerLevel = 144,
+                    ServerID = 1,
+                    ProfileIconNumber = 3635
+                },
+                new Summoner
+                {
+                    ID = 10,
+                    SummonerName = "Broxah",
+                    SummonerLevel = 188,
+                    ServerID = 1,
+                    ProfileIconNumber = 3670
                 });
         }
     }

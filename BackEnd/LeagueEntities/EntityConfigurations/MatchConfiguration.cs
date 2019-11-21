@@ -34,18 +34,14 @@ namespace LeagueEntities.EntityConfigurations
             builder.Property(m => m.GameType)
                 .HasMaxLength(20);
 
-            builder.Property(m => m.GameVersion)
-                .HasMaxLength(20);
-
             builder.HasData(new Match[]
             {
                 new Match
                 {
-                    ID = 2234518599,
+                    ID = 1,
                     SeasonNo = 5,
                     MatchDuration = 1804,
-                    MatchCreation = new DateTime(1438717661744),
-                    GameVersion = "9.14.282.3231",
+                    MatchCreation = DateTime.Now,
                     ServerID = 2,
                     GameMode = "CLASSIC",
                     GameType = "MATCHED_GAME",
@@ -54,11 +50,46 @@ namespace LeagueEntities.EntityConfigurations
                 },
                 new Match
                 {
-                    ID = 2234479397,
+                    ID = 2,
                     SeasonNo = 13,
                     MatchDuration = 2415,
-                    MatchCreation = new DateTime(1564310418265),
-                    GameVersion = "9.14.282.3231",
+                    MatchCreation = DateTime.Now,
+                    ServerID = 2,
+                    GameMode = "CLASSIC",
+                    GameType = "MATCHED_GAME",
+                    MapID = 11,
+                    QueueTypeID = 440
+                },
+                new Match
+                {
+                    ID = 3,
+                    SeasonNo = 13,
+                    MatchDuration = 4151,
+                    MatchCreation = DateTime.Now,
+                    ServerID = 2,
+                    GameMode = "CLASSIC",
+                    GameType = "MATCHED_GAME",
+                    MapID = 11,
+                    QueueTypeID = 440
+                },
+                new Match
+                {
+                    ID = 4,
+                    SeasonNo = 13,
+                    MatchDuration = 2415,
+                    MatchCreation = DateTime.Now,
+                    ServerID = 2,
+                    GameMode = "CLASSIC",
+                    GameType = "MATCHED_GAME",
+                    MapID = 11,
+                    QueueTypeID = 440
+                },
+                new Match
+                {
+                    ID = 4,
+                    SeasonNo = 13,
+                    MatchDuration = 2415,
+                    MatchCreation = DateTime.Now,
                     ServerID = 2,
                     GameMode = "CLASSIC",
                     GameType = "MATCHED_GAME",

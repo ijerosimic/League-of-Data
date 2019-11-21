@@ -12,7 +12,7 @@ namespace LeagueEntities.Models
         public int ChampionPointsSinceLastLevel { get; set; }
         public int ChampionPointsUntilNextLevel { get; set; }
 
-        public string SummonerID { get; set; }
+        public int SummonerID { get; set; }
         public int ChampionID { get; set; }
 
         public Summoner Summoner { get; set; }
