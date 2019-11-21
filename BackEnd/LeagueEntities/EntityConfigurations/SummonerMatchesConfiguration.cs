@@ -37,9 +37,6 @@ namespace LeagueEntities.EntityConfigurations
             builder.Property(m => m.ChampionID)
                 .IsRequired();
 
-            builder.Property(m => m.SeasonNo)
-                .IsRequired();
-
             builder.HasData(new SummonerMatches[]
             {
                     new SummonerMatches
@@ -50,7 +47,22 @@ namespace LeagueEntities.EntityConfigurations
                         SummonerID = 1,
                         RoleName = "DUO_MARKSMAN",
                         LaneName = "BOTTOM",
-                        SeasonNo = 13
+                        Kills = 11,
+                        Assists = 5,
+                        Deaths = 18,
+                        DamageDone = 43.511M,
+                        GoldEarned = 21.523M,
+                        WardsPlaced = 14,
+                        KeystoneRune = "Lethal Tempo",
+                        MinorRune = "Resolve",
+                        Item1 = "Boots of Speed",
+                        Item2 = "Infinity Edge",
+                        Item3 = "BF Sword",
+                        Item4 = "Statikk Shiv",
+                        Item5 = "Essence Reaver",
+                        Item6 = "Death's Dance",
+                        Trinket = "Warding Totem",
+                        Team = "Blue"
                     },
                     new SummonerMatches
                     {
@@ -60,7 +72,22 @@ namespace LeagueEntities.EntityConfigurations
                         SummonerID = 2,
                         RoleName = "SOLO_MID",
                         LaneName = "MID",
-                        SeasonNo = 13
+                         Kills = 11,
+                        Assists = 5,
+                        Deaths = 18,
+                        DamageDone = 43.511M,
+                        GoldEarned = 21.523M,
+                        WardsPlaced = 14,
+                        KeystoneRune = "Lethal Tempo",
+                        MinorRune = "Resolve",
+                        Item1 = "Boots of Speed",
+                        Item2 = "Infinity Edge",
+                        Item3 = "BF Sword",
+                        Item4 = "Statikk Shiv",
+                        Item5 = "Essence Reaver",
+                        Item6 = "Death's Dance",
+                        Trinket = "Warding Totem",
+                        Team = "Blue"
                     },
                     new SummonerMatches
                     {
@@ -70,7 +97,22 @@ namespace LeagueEntities.EntityConfigurations
                         SummonerID = 3,
                         RoleName = "DUO_SUPPORT",
                         LaneName = "BOTTOM",
-                        SeasonNo = 13
+                         Kills = 11,
+                        Assists = 5,
+                        Deaths = 18,
+                        DamageDone = 43.511M,
+                        GoldEarned = 21.523M,
+                        WardsPlaced = 14,
+                        KeystoneRune = "Lethal Tempo",
+                        MinorRune = "Resolve",
+                        Item1 = "Boots of Speed",
+                        Item2 = "Infinity Edge",
+                        Item3 = "BF Sword",
+                        Item4 = "Statikk Shiv",
+                        Item5 = "Essence Reaver",
+                        Item6 = "Death's Dance",
+                        Trinket = "Warding Totem",
+                        Team = "Blue"
                     },
                     new SummonerMatches
                     {
@@ -80,7 +122,22 @@ namespace LeagueEntities.EntityConfigurations
                         SummonerID = 4,
                         RoleName = "SOLO_JUNGLE",
                         LaneName = "JUNGLE",
-                        SeasonNo = 13
+                         Kills = 11,
+                        Assists = 5,
+                        Deaths = 18,
+                        DamageDone = 43.511M,
+                        GoldEarned = 21.523M,
+                        WardsPlaced = 14,
+                        KeystoneRune = "Lethal Tempo",
+                        MinorRune = "Resolve",
+                        Item1 = "Boots of Speed",
+                        Item2 = "Infinity Edge",
+                        Item3 = "BF Sword",
+                        Item4 = "Statikk Shiv",
+                        Item5 = "Essence Reaver",
+                        Item6 = "Death's Dance",
+                        Trinket = "Warding Totem",
+                        Team = "Blue"
                     },
                     new SummonerMatches
                     {
@@ -90,7 +147,22 @@ namespace LeagueEntities.EntityConfigurations
                         SummonerID = 5,
                         RoleName = "SOLO_TOP",
                         LaneName = "TOP",
-                        SeasonNo = 13
+                         Kills = 11,
+                        Assists = 5,
+                        Deaths = 18,
+                        DamageDone = 43.511M,
+                        GoldEarned = 21.523M,
+                        WardsPlaced = 14,
+                        KeystoneRune = "Lethal Tempo",
+                        MinorRune = "Resolve",
+                        Item1 = "Boots of Speed",
+                        Item2 = "Infinity Edge",
+                        Item3 = "BF Sword",
+                        Item4 = "Statikk Shiv",
+                        Item5 = "Essence Reaver",
+                        Item6 = "Death's Dance",
+                        Trinket = "Warding Totem",
+                        Team = "Blue"
                     },
                      new SummonerMatches
                     {
@@ -100,7 +172,22 @@ namespace LeagueEntities.EntityConfigurations
                         SummonerID = 6,
                         RoleName = "DUO_MARKSMAN",
                         LaneName = "BOTTOM",
-                        SeasonNo = 13
+                         Kills = 11,
+                        Assists = 5,
+                        Deaths = 18,
+                        DamageDone = 43.511M,
+                        GoldEarned = 21.523M,
+                        WardsPlaced = 14,
+                        KeystoneRune = "Lethal Tempo",
+                        MinorRune = "Resolve",
+                        Item1 = "Boots of Speed",
+                        Item2 = "Infinity Edge",
+                        Item3 = "BF Sword",
+                        Item4 = "Statikk Shiv",
+                        Item5 = "Essence Reaver",
+                        Item6 = "Death's Dance",
+                        Trinket = "Warding Totem",
+                        Team = "Red"
                     },
                     new SummonerMatches
                     {
@@ -110,7 +197,22 @@ namespace LeagueEntities.EntityConfigurations
                         SummonerID = 7,
                         RoleName = "SOLO_MID",
                         LaneName = "MID",
-                        SeasonNo = 13
+                         Kills = 11,
+                        Assists = 5,
+                        Deaths = 18,
+                        DamageDone = 43.511M,
+                        GoldEarned = 21.523M,
+                        WardsPlaced = 14,
+                        KeystoneRune = "Lethal Tempo",
+                        MinorRune = "Resolve",
+                        Item1 = "Boots of Speed",
+                        Item2 = "Infinity Edge",
+                        Item3 = "BF Sword",
+                        Item4 = "Statikk Shiv",
+                        Item5 = "Essence Reaver",
+                        Item6 = "Death's Dance",
+                        Trinket = "Warding Totem",
+                        Team = "Red"
                     },
                     new SummonerMatches
                     {
@@ -120,7 +222,22 @@ namespace LeagueEntities.EntityConfigurations
                         SummonerID = 8,
                         RoleName = "DUO_SUPPORT",
                         LaneName = "BOTTOM",
-                        SeasonNo = 13
+                         Kills = 11,
+                        Assists = 5,
+                        Deaths = 18,
+                        DamageDone = 43.511M,
+                        GoldEarned = 21.523M,
+                        WardsPlaced = 14,
+                        KeystoneRune = "Lethal Tempo",
+                        MinorRune = "Resolve",
+                        Item1 = "Boots of Speed",
+                        Item2 = "Infinity Edge",
+                        Item3 = "BF Sword",
+                        Item4 = "Statikk Shiv",
+                        Item5 = "Essence Reaver",
+                        Item6 = "Death's Dance",
+                        Trinket = "Warding Totem",
+                        Team = "Red"
                     },
                     new SummonerMatches
                     {
@@ -130,7 +247,22 @@ namespace LeagueEntities.EntityConfigurations
                         SummonerID = 9,
                         RoleName = "SOLO_JUNGLE",
                         LaneName = "JUNGLE",
-                        SeasonNo = 13
+                         Kills = 11,
+                        Assists = 5,
+                        Deaths = 18,
+                        DamageDone = 43.511M,
+                        GoldEarned = 21.523M,
+                        WardsPlaced = 14,
+                        KeystoneRune = "Lethal Tempo",
+                        MinorRune = "Resolve",
+                        Item1 = "Boots of Speed",
+                        Item2 = "Infinity Edge",
+                        Item3 = "BF Sword",
+                        Item4 = "Statikk Shiv",
+                        Item5 = "Essence Reaver",
+                        Item6 = "Death's Dance",
+                        Trinket = "Warding Totem",
+                        Team = "Red"
                     },
                     new SummonerMatches
                     {
@@ -140,10 +272,24 @@ namespace LeagueEntities.EntityConfigurations
                         SummonerID = 10,
                         RoleName = "SOLO_TOP",
                         LaneName = "TOP",
-                        SeasonNo = 13
+                         Kills = 11,
+                        Assists = 5,
+                        Deaths = 18,
+                        DamageDone = 43.511M,
+                        GoldEarned = 21.523M,
+                        WardsPlaced = 14,
+                        KeystoneRune = "Lethal Tempo",
+                        MinorRune = "Resolve",
+                        Item1 = "Boots of Speed",
+                        Item2 = "Infinity Edge",
+                        Item3 = "BF Sword",
+                        Item4 = "Statikk Shiv",
+                        Item5 = "Essence Reaver",
+                        Item6 = "Death's Dance",
+                        Trinket = "Warding Totem",
+                        Team = "Red"
                     }
             });
         }
-    }
     }
 }

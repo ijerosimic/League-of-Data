@@ -19,14 +19,13 @@ namespace LeagueOfData.Controllers
         }
 
         [HttpGet("{matchID}")]
-        public IActionResult GetDetails(long matchID)
+        public IActionResult GetDetails(int matchID)
         {
             if (matchID < 1)
                 return BadRequest();
 
             var match = service
-                .GetMatchDetails(matchID)
-                .FirstOrDefault();
+                .GetMatchDetails(matchID);
 
             if (match is null)
                 return NotFound();

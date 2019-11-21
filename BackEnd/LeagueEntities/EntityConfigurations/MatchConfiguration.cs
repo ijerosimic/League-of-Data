@@ -40,13 +40,28 @@ namespace LeagueEntities.EntityConfigurations
                 {
                     ID = 1,
                     SeasonNo = 5,
-                    MatchDuration = 1804,
+                    MatchDuration = 4240,
                     MatchCreation = DateTime.Now,
                     ServerID = 2,
                     GameMode = "CLASSIC",
                     GameType = "MATCHED_GAME",
                     MapID = 11,
-                    QueueTypeID = 440
+                    QueueTypeID = 440,
+                    TotalGold = 166395,
+                    TotalKills = 108,
+                    RedTeamGold = 77988,
+                    RedTeamKills = 47,
+                    RedTeamBarons = 1,
+                    RedTeamElderDragons = 0,
+                    RedTeamDragons = 0,
+                    RedTeamTurrets = 3,
+                    BlueTeamGold = 88407,
+                    BlueTeamKills = 71,
+                    BlueTeamBarons = 1,
+                    BlueTeamElderDragons = 0,
+                    BlueTeamDragons = 5,
+                    BlueTeamTurrets = 11,
+                    Winner = "Blue"
                 },
                 new Match
                 {
@@ -86,7 +101,7 @@ namespace LeagueEntities.EntityConfigurations
                 },
                 new Match
                 {
-                    ID = 4,
+                    ID = 5,
                     SeasonNo = 13,
                     MatchDuration = 2415,
                     MatchCreation = DateTime.Now,

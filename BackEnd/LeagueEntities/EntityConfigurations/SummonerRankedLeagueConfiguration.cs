@@ -33,7 +33,7 @@ namespace LeagueEntities.EntityConfigurations
                 new SummonerRankedLeague
                 {
                     ID = 1,
-                    SummonerID = "T9CKkCvw9-rvYCGLYkvE8FnP-LbcucxCUTvOcRL6R6HsV84",
+                    SummonerID = 1,
                     HotStreak = false,
                     NumberOfWins = 122,
                     IsVeteran = true,
@@ -48,7 +48,7 @@ namespace LeagueEntities.EntityConfigurations
                 new SummonerRankedLeague
                 {
                     ID = 2,
-                    SummonerID = "0sIa8mv2kdRhUicAKIb0pMCtA9eEYivCAfAW7ZGBZz5qlME0",
+                    SummonerID = 2,
                     HotStreak = false,
                     NumberOfWins = 37,
                     IsVeteran = false,

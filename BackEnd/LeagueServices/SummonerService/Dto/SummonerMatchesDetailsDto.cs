@@ -1,10 +1,7 @@
-﻿namespace LeagueEntities.Models
+﻿namespace LeagueServices.SummonerService.Dto
 {
-    public class SummonerMatches
+    public class SummonerMatchesDetailsDto : SummonerMatchesDto
     {
-        public int ID { get; set; }
-        public string RoleName { get; set; }
-        public string LaneName { get; set; }
         public int Kills { get; set; }
         public int Deaths { get; set; }
         public int Assists { get; set; }
@@ -24,13 +21,5 @@
         public string KeystoneRune { get; set; }
         public string MinorRune { get; set; }
         public string Team { get; set; }
-
-        public int SummonerID { get; set; }
-        public int ChampionID { get; set; }
-        public int MatchID { get; set; }
-        
-        public Summoner Summoner { get; set; }
-        public Champion Champion { get; set; }
-        public Match Match { get; set; }
     }
 }

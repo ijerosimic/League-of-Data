@@ -30,7 +30,7 @@ namespace LeagueServices.SummonerService.QueryObjects
             {
                 SummonerListFilterBy.NoFilter => summoners,
                 SummonerListFilterBy.Id => summoners
-                    .Where(s => s.ID == value),
+                    .Where(s => s.ID == Convert.ToInt32(value)),
                 SummonerListFilterBy.SummonerName => summoners
                     .Where(s => s.SummonerName.ToLower().Contains(value.ToLower())),
                 SummonerListFilterBy.SummonerLevel => summoners
@@ -49,10 +49,11 @@ namespace LeagueServices.SummonerService.QueryObjects
             switch (filterBy)
             {
                 case SummonerListFilterBy.SummonerName:
-                    if (string.IsNullOrWhiteSpace(value))
+                    if (string.IsNullOrWhiteSpace(value) || 
+                        int.TryParse(value, out _) == false)
                         throw new ArgumentException(
                             nameof(filterBy),
-                            "Cannot filter by summoner name if argument is null!");
+                            "Error filtering by summoner name!");
                     break;
                 case SummonerListFilterBy.ServerID:
                     if (int.TryParse(value, out _) == false)

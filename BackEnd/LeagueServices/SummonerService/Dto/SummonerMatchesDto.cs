@@ -4,6 +4,7 @@ namespace LeagueServices.SummonerService.Dto
 {
     public class SummonerMatchesDto
     {
+        public int ID { get; set; }
         public long MatchID { get; set; }
         public string ChampionPlayed { get; set; }
         public string RoleName { get; set; }
