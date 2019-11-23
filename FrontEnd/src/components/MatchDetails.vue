@@ -4,6 +4,7 @@
       <v-col cols="12">
         <v-card class="mx-auto" outlined>
           <v-card-title class="justify-center">Match Details</v-card-title>
+          <button @click="heyoo()">CLICK AND LICK</button>
           <v-row>
             <v-col cols="6">
               <v-card v-for="(n,i) in 5" :key="i" class="pa-5 ma-2">

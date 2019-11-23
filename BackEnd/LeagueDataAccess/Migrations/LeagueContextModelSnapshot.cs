@@ -44,6 +44,78 @@ namespace LeagueDataAccess.Migrations
                     b.HasKey("ID");
 
                     b.ToTable("Champions");
+
+                    b.HasData(
+                        new
+                        {
+                            ID = 266,
+                            ChampionDescription = "Desc",
+                            ChampionName = "Champion",
+                            ChampionTitle = "Title"
+                        },
+                        new
+                        {
+                            ID = 103,
+                            ChampionDescription = "Desc",
+                            ChampionName = "Champion",
+                            ChampionTitle = "Title"
+                        },
+                        new
+                        {
+                            ID = 12,
+                            ChampionDescription = "Desc",
+                            ChampionName = "Champion",
+                            ChampionTitle = "Title"
+                        },
+                        new
+                        {
+                            ID = 32,
+                            ChampionDescription = "Desc",
+                            ChampionName = "Champion",
+                            ChampionTitle = "Title"
+                        },
+                        new
+                        {
+                            ID = 164,
+                            ChampionDescription = "Desc",
+                            ChampionName = "Champion",
+                            ChampionTitle = "Title"
+                        },
+                        new
+                        {
+                            ID = 42,
+                            ChampionDescription = "Desc",
+                            ChampionName = "Champion",
+                            ChampionTitle = "Title"
+                        },
+                        new
+                        {
+                            ID = 131,
+                            ChampionDescription = "Desc",
+                            ChampionName = "Champion",
+                            ChampionTitle = "Title"
+                        },
+                        new
+                        {
+                            ID = 9,
+                            ChampionDescription = "Desc",
+                            ChampionName = "Champion",
+                            ChampionTitle = "Title"
+                        },
+                        new
+                        {
+                            ID = 79,
+                            ChampionDescription = "Desc",
+                            ChampionName = "Champion",
+                            ChampionTitle = "Title"
+                        },
+                        new
+                        {
+                            ID = 420,
+                            ChampionDescription = "Desc",
+                            ChampionName = "Champion",
+                            ChampionTitle = "Title"
+                        });
                 });
 
             modelBuilder.Entity("LeagueEntities.Models.ChampionStats", b =>
@@ -308,7 +380,7 @@ namespace LeagueDataAccess.Migrations
                             GameMode = "CLASSIC",
                             GameType = "MATCHED_GAME",
                             MapID = 11,
-                            MatchCreation = new DateTime(2019, 11, 21, 21, 15, 28, 923, DateTimeKind.Local).AddTicks(5011),
+                            MatchCreation = new DateTime(2019, 11, 23, 13, 26, 54, 956, DateTimeKind.Local).AddTicks(2528),
                             MatchDuration = 4240,
                             QueueTypeID = 440,
                             RedTeamBarons = 1,
@@ -335,7 +407,7 @@ namespace LeagueDataAccess.Migrations
                             GameMode = "CLASSIC",
                             GameType = "MATCHED_GAME",
                             MapID = 11,
-                            MatchCreation = new DateTime(2019, 11, 21, 21, 15, 28, 928, DateTimeKind.Local).AddTicks(5335),
+                            MatchCreation = new DateTime(2019, 11, 23, 13, 26, 54, 958, DateTimeKind.Local).AddTicks(8870),
                             MatchDuration = 2415,
                             QueueTypeID = 440,
                             RedTeamBarons = 0,
@@ -361,7 +433,7 @@ namespace LeagueDataAccess.Migrations
                             GameMode = "CLASSIC",
                             GameType = "MATCHED_GAME",
                             MapID = 11,
-                            MatchCreation = new DateTime(2019, 11, 21, 21, 15, 28, 928, DateTimeKind.Local).AddTicks(5581),
+                            MatchCreation = new DateTime(2019, 11, 23, 13, 26, 54, 958, DateTimeKind.Local).AddTicks(8943),
                             MatchDuration = 4151,
                             QueueTypeID = 440,
                             RedTeamBarons = 0,
@@ -387,7 +459,7 @@ namespace LeagueDataAccess.Migrations
                             GameMode = "CLASSIC",
                             GameType = "MATCHED_GAME",
                             MapID = 11,
-                            MatchCreation = new DateTime(2019, 11, 21, 21, 15, 28, 928, DateTimeKind.Local).AddTicks(5592),
+                            MatchCreation = new DateTime(2019, 11, 23, 13, 26, 54, 958, DateTimeKind.Local).AddTicks(8948),
                             MatchDuration = 2415,
                             QueueTypeID = 440,
                             RedTeamBarons = 0,
@@ -413,7 +485,7 @@ namespace LeagueDataAccess.Migrations
                             GameMode = "CLASSIC",
                             GameType = "MATCHED_GAME",
                             MapID = 11,
-                            MatchCreation = new DateTime(2019, 11, 21, 21, 15, 28, 928, DateTimeKind.Local).AddTicks(5597),
+                            MatchCreation = new DateTime(2019, 11, 23, 13, 26, 54, 958, DateTimeKind.Local).AddTicks(8951),
                             MatchDuration = 2415,
                             QueueTypeID = 440,
                             RedTeamBarons = 0,
@@ -744,12 +816,6 @@ namespace LeagueDataAccess.Migrations
                     b.Property<string>("RoleName")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("SeasonNo")
-                        .HasColumnType("int");
-
-                    b.Property<string>("ServerName")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("SummonerSpell")
                         .HasColumnType("nvarchar(max)");
 
@@ -796,7 +862,6 @@ namespace LeagueDataAccess.Migrations
                             LaneName = "BOTTOM",
                             MinorRune = "Resolve",
                             RoleName = "DUO_MARKSMAN",
-                            SeasonNo = 13,
                             Team = "Blue",
                             Trinket = "Warding Totem",
                             WardsPlaced = 14
@@ -823,7 +888,6 @@ namespace LeagueDataAccess.Migrations
                             LaneName = "MID",
                             MinorRune = "Resolve",
                             RoleName = "SOLO_MID",
-                            SeasonNo = 13,
                             Team = "Blue",
                             Trinket = "Warding Totem",
                             WardsPlaced = 14
@@ -850,7 +914,6 @@ namespace LeagueDataAccess.Migrations
                             LaneName = "BOTTOM",
                             MinorRune = "Resolve",
                             RoleName = "DUO_SUPPORT",
-                            SeasonNo = 13,
                             Team = "Blue",
                             Trinket = "Warding Totem",
                             WardsPlaced = 14
@@ -877,7 +940,6 @@ namespace LeagueDataAccess.Migrations
                             LaneName = "JUNGLE",
                             MinorRune = "Resolve",
                             RoleName = "SOLO_JUNGLE",
-                            SeasonNo = 13,
                             Team = "Blue",
                             Trinket = "Warding Totem",
                             WardsPlaced = 14
@@ -904,7 +966,6 @@ namespace LeagueDataAccess.Migrations
                             LaneName = "TOP",
                             MinorRune = "Resolve",
                             RoleName = "SOLO_TOP",
-                            SeasonNo = 13,
                             Team = "Blue",
                             Trinket = "Warding Totem",
                             WardsPlaced = 14
@@ -918,7 +979,7 @@ namespace LeagueDataAccess.Migrations
                             DamageDone = 43.511m,
                             Deaths = 18,
                             GoldEarned = 21.523m,
-                            ID = 1,
+                            ID = 6,
                             Item1 = "Boots of Speed",
                             Item2 = "Infinity Edge",
                             Item3 = "BF Sword",
@@ -931,7 +992,6 @@ namespace LeagueDataAccess.Migrations
                             LaneName = "BOTTOM",
                             MinorRune = "Resolve",
                             RoleName = "DUO_MARKSMAN",
-                            SeasonNo = 13,
                             Team = "Red",
                             Trinket = "Warding Totem",
                             WardsPlaced = 14
@@ -945,7 +1005,7 @@ namespace LeagueDataAccess.Migrations
                             DamageDone = 43.511m,
                             Deaths = 18,
                             GoldEarned = 21.523m,
-                            ID = 2,
+                            ID = 7,
                             Item1 = "Boots of Speed",
                             Item2 = "Infinity Edge",
                             Item3 = "BF Sword",
@@ -958,7 +1018,6 @@ namespace LeagueDataAccess.Migrations
                             LaneName = "MID",
                             MinorRune = "Resolve",
                             RoleName = "SOLO_MID",
-                            SeasonNo = 13,
                             Team = "Red",
                             Trinket = "Warding Totem",
                             WardsPlaced = 14
@@ -972,7 +1031,7 @@ namespace LeagueDataAccess.Migrations
                             DamageDone = 43.511m,
                             Deaths = 18,
                             GoldEarned = 21.523m,
-                            ID = 3,
+                            ID = 8,
                             Item1 = "Boots of Speed",
                             Item2 = "Infinity Edge",
                             Item3 = "BF Sword",
@@ -985,7 +1044,6 @@ namespace LeagueDataAccess.Migrations
                             LaneName = "BOTTOM",
                             MinorRune = "Resolve",
                             RoleName = "DUO_SUPPORT",
-                            SeasonNo = 13,
                             Team = "Red",
                             Trinket = "Warding Totem",
                             WardsPlaced = 14
@@ -999,7 +1057,7 @@ namespace LeagueDataAccess.Migrations
                             DamageDone = 43.511m,
                             Deaths = 18,
                             GoldEarned = 21.523m,
-                            ID = 4,
+                            ID = 9,
                             Item1 = "Boots of Speed",
                             Item2 = "Infinity Edge",
                             Item3 = "BF Sword",
@@ -1012,7 +1070,6 @@ namespace LeagueDataAccess.Migrations
                             LaneName = "JUNGLE",
                             MinorRune = "Resolve",
                             RoleName = "SOLO_JUNGLE",
-                            SeasonNo = 13,
                             Team = "Red",
                             Trinket = "Warding Totem",
                             WardsPlaced = 14
@@ -1026,7 +1083,7 @@ namespace LeagueDataAccess.Migrations
                             DamageDone = 43.511m,
                             Deaths = 18,
                             GoldEarned = 21.523m,
-                            ID = 5,
+                            ID = 10,
                             Item1 = "Boots of Speed",
                             Item2 = "Infinity Edge",
                             Item3 = "BF Sword",
@@ -1039,7 +1096,6 @@ namespace LeagueDataAccess.Migrations
                             LaneName = "TOP",
                             MinorRune = "Resolve",
                             RoleName = "SOLO_TOP",
-                            SeasonNo = 13,
                             Team = "Red",
                             Trinket = "Warding Totem",
                             WardsPlaced = 14

@@ -166,7 +166,7 @@ namespace LeagueEntities.EntityConfigurations
                     },
                      new SummonerMatches
                     {
-                        ID = 1,
+                        ID = 6,
                         MatchID = 1,
                         ChampionID = 42,
                         SummonerID = 6,
@@ -191,7 +191,7 @@ namespace LeagueEntities.EntityConfigurations
                     },
                     new SummonerMatches
                     {
-                        ID = 2,
+                        ID = 7,
                         MatchID = 1,
                         ChampionID = 131,
                         SummonerID = 7,
@@ -216,7 +216,7 @@ namespace LeagueEntities.EntityConfigurations
                     },
                     new SummonerMatches
                     {
-                        ID = 3,
+                        ID = 8,
                         MatchID = 1,
                         ChampionID = 9,
                         SummonerID = 8,
@@ -241,7 +241,7 @@ namespace LeagueEntities.EntityConfigurations
                     },
                     new SummonerMatches
                     {
-                        ID = 4,
+                        ID = 9,
                         MatchID = 1,
                         ChampionID = 79,
                         SummonerID = 9,
@@ -266,7 +266,7 @@ namespace LeagueEntities.EntityConfigurations
                     },
                     new SummonerMatches
                     {
-                        ID = 5,
+                        ID = 10,
                         MatchID = 1,
                         ChampionID = 420,
                         SummonerID = 10,
