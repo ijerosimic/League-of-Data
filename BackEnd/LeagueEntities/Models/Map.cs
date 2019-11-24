@@ -4,6 +4,11 @@ namespace LeagueEntities.Models
 {
     public class Map
     {
+        public Map()
+        {
+            Matches = new HashSet<Match>();
+        }
+
         public int ID { get; set; }
         public string MapName { get; set; }
 

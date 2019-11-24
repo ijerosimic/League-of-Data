@@ -26,7 +26,9 @@ namespace LeagueDataAccess
         public DbSet<Champion> Champions { get; set; }
         public DbSet<ChampionStats> ChampionsStats { get; set; }
         public DbSet<Match> Matches { get; set; }
-        public DbSet<SummonerMatches> SummonerMatches { get; set; }
+        public DbSet<SummonerMatch> SummonerMatches { get; set; }
+        public DbSet<SummonerMatchesItems> SummonerMatchesItems { get; set; }
+        public DbSet<Item> Items { get; set; }
         public DbSet<Map> Maps { get; set; }
         public DbSet<QueueType> QueueTypes { get; set; }
         public DbSet<SummonerRankedLeague> SummonerRankedLeagues { get; set; }
@@ -41,7 +43,9 @@ namespace LeagueDataAccess
             modelBuilder.ApplyConfiguration(new ChampionConfiguration());
             modelBuilder.ApplyConfiguration(new ChampionStatsConfiguration());
             modelBuilder.ApplyConfiguration(new MatchConfiguration());
-            modelBuilder.ApplyConfiguration(new SummonerMatchesConfiguration());
+            modelBuilder.ApplyConfiguration(new SummonerMatchConfiguration());
+            modelBuilder.ApplyConfiguration(new SummonerMatchesItemsCOnfiguration());
+            modelBuilder.ApplyConfiguration(new ItemConfiguration());
             modelBuilder.ApplyConfiguration(new MapConfiguration());
             modelBuilder.ApplyConfiguration(new QueueTypeConfiguration());
             modelBuilder.ApplyConfiguration(new TagConfiguration());

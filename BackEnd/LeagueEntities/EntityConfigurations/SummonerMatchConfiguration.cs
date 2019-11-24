@@ -5,9 +5,9 @@ using System;
 
 namespace LeagueEntities.EntityConfigurations
 {
-    public class SummonerMatchesConfiguration : IEntityTypeConfiguration<SummonerMatches>
+    public class SummonerMatchConfiguration : IEntityTypeConfiguration<SummonerMatch>
     {
-        public void Configure(EntityTypeBuilder<SummonerMatches> builder)
+        public void Configure(EntityTypeBuilder<SummonerMatch> builder)
         {
             builder.HasKey(m => new { m.SummonerID, m.MatchID });
 
@@ -37,9 +37,9 @@ namespace LeagueEntities.EntityConfigurations
             builder.Property(m => m.ChampionID)
                 .IsRequired();
 
-            builder.HasData(new SummonerMatches[]
+            builder.HasData(new SummonerMatch[]
             {
-                    new SummonerMatches
+                    new SummonerMatch
                     {
                         ID = 1,
                         MatchID = 1,
@@ -55,16 +55,15 @@ namespace LeagueEntities.EntityConfigurations
                         WardsPlaced = 14,
                         KeystoneRune = "Lethal Tempo",
                         MinorRune = "Resolve",
-                        Item1 = "Boots of Speed",
-                        Item2 = "Infinity Edge",
-                        Item3 = "BF Sword",
-                        Item4 = "Statikk Shiv",
-                        Item5 = "Essence Reaver",
-                        Item6 = "Death's Dance",
+                        Item1 = 1001,
+                        Item2 = 1004,
+                        Item3 = 1005,
+                        Item4 = 1007,
+                        Item5 = 1038,
                         Trinket = "Warding Totem",
                         Team = "Blue"
                     },
-                    new SummonerMatches
+                    new SummonerMatch
                     {
                         ID = 2,
                         MatchID = 1,
@@ -80,16 +79,15 @@ namespace LeagueEntities.EntityConfigurations
                         WardsPlaced = 14,
                         KeystoneRune = "Lethal Tempo",
                         MinorRune = "Resolve",
-                        Item1 = "Boots of Speed",
-                        Item2 = "Infinity Edge",
-                        Item3 = "BF Sword",
-                        Item4 = "Statikk Shiv",
-                        Item5 = "Essence Reaver",
-                        Item6 = "Death's Dance",
+                        Item1 = 1001,
+                        Item2 = 1004,
+                        Item3 = 1005,
+                        Item4 = 1007,
+                        Item5 = 1038,
                         Trinket = "Warding Totem",
                         Team = "Blue"
                     },
-                    new SummonerMatches
+                    new SummonerMatch
                     {
                         ID = 3,
                         MatchID = 1,
@@ -105,16 +103,15 @@ namespace LeagueEntities.EntityConfigurations
                         WardsPlaced = 14,
                         KeystoneRune = "Lethal Tempo",
                         MinorRune = "Resolve",
-                        Item1 = "Boots of Speed",
-                        Item2 = "Infinity Edge",
-                        Item3 = "BF Sword",
-                        Item4 = "Statikk Shiv",
-                        Item5 = "Essence Reaver",
-                        Item6 = "Death's Dance",
+                        Item1 = 1001,
+                        Item2 = 1004,
+                        Item3 = 1005,
+                        Item4 = 1007,
+                        Item5 = 1038,
                         Trinket = "Warding Totem",
                         Team = "Blue"
                     },
-                    new SummonerMatches
+                    new SummonerMatch
                     {
                         ID = 4,
                         MatchID = 1,
@@ -130,16 +127,15 @@ namespace LeagueEntities.EntityConfigurations
                         WardsPlaced = 14,
                         KeystoneRune = "Lethal Tempo",
                         MinorRune = "Resolve",
-                        Item1 = "Boots of Speed",
-                        Item2 = "Infinity Edge",
-                        Item3 = "BF Sword",
-                        Item4 = "Statikk Shiv",
-                        Item5 = "Essence Reaver",
-                        Item6 = "Death's Dance",
+                        Item1 = 1001,
+                        Item2 = 1004,
+                        Item3 = 1005,
+                        Item4 = 1007,
+                        Item5 = 1038,
                         Trinket = "Warding Totem",
                         Team = "Blue"
                     },
-                    new SummonerMatches
+                    new SummonerMatch
                     {
                         ID = 5,
                         MatchID = 1,
@@ -155,16 +151,15 @@ namespace LeagueEntities.EntityConfigurations
                         WardsPlaced = 14,
                         KeystoneRune = "Lethal Tempo",
                         MinorRune = "Resolve",
-                        Item1 = "Boots of Speed",
-                        Item2 = "Infinity Edge",
-                        Item3 = "BF Sword",
-                        Item4 = "Statikk Shiv",
-                        Item5 = "Essence Reaver",
-                        Item6 = "Death's Dance",
+                        Item1 = 1001,
+                        Item2 = 1004,
+                        Item3 = 1005,
+                        Item4 = 1007,
+                        Item5 = 1038,
                         Trinket = "Warding Totem",
                         Team = "Blue"
                     },
-                     new SummonerMatches
+                     new SummonerMatch
                     {
                         ID = 6,
                         MatchID = 1,
@@ -180,16 +175,15 @@ namespace LeagueEntities.EntityConfigurations
                         WardsPlaced = 14,
                         KeystoneRune = "Lethal Tempo",
                         MinorRune = "Resolve",
-                        Item1 = "Boots of Speed",
-                        Item2 = "Infinity Edge",
-                        Item3 = "BF Sword",
-                        Item4 = "Statikk Shiv",
-                        Item5 = "Essence Reaver",
-                        Item6 = "Death's Dance",
+                        Item1 = 1001,
+                        Item2 = 1004,
+                        Item3 = 1005,
+                        Item4 = 1007,
+                        Item5 = 1038,
                         Trinket = "Warding Totem",
                         Team = "Red"
                     },
-                    new SummonerMatches
+                    new SummonerMatch
                     {
                         ID = 7,
                         MatchID = 1,
@@ -205,16 +199,15 @@ namespace LeagueEntities.EntityConfigurations
                         WardsPlaced = 14,
                         KeystoneRune = "Lethal Tempo",
                         MinorRune = "Resolve",
-                        Item1 = "Boots of Speed",
-                        Item2 = "Infinity Edge",
-                        Item3 = "BF Sword",
-                        Item4 = "Statikk Shiv",
-                        Item5 = "Essence Reaver",
-                        Item6 = "Death's Dance",
+                        Item1 = 1001,
+                        Item2 = 1004,
+                        Item3 = 1005,
+                        Item4 = 1007,
+                        Item5 = 1038,
                         Trinket = "Warding Totem",
                         Team = "Red"
                     },
-                    new SummonerMatches
+                    new SummonerMatch
                     {
                         ID = 8,
                         MatchID = 1,
@@ -230,16 +223,15 @@ namespace LeagueEntities.EntityConfigurations
                         WardsPlaced = 14,
                         KeystoneRune = "Lethal Tempo",
                         MinorRune = "Resolve",
-                        Item1 = "Boots of Speed",
-                        Item2 = "Infinity Edge",
-                        Item3 = "BF Sword",
-                        Item4 = "Statikk Shiv",
-                        Item5 = "Essence Reaver",
-                        Item6 = "Death's Dance",
+                        Item1 = 1001,
+                        Item2 = 1004,
+                        Item3 = 1005,
+                        Item4 = 1007,
+                        Item5 = 1038,
                         Trinket = "Warding Totem",
                         Team = "Red"
                     },
-                    new SummonerMatches
+                    new SummonerMatch
                     {
                         ID = 9,
                         MatchID = 1,
@@ -255,16 +247,15 @@ namespace LeagueEntities.EntityConfigurations
                         WardsPlaced = 14,
                         KeystoneRune = "Lethal Tempo",
                         MinorRune = "Resolve",
-                        Item1 = "Boots of Speed",
-                        Item2 = "Infinity Edge",
-                        Item3 = "BF Sword",
-                        Item4 = "Statikk Shiv",
-                        Item5 = "Essence Reaver",
-                        Item6 = "Death's Dance",
+                        Item1 = 1001,
+                        Item2 = 1004,
+                        Item3 = 1005,
+                        Item4 = 1007,
+                        Item5 = 1038,
                         Trinket = "Warding Totem",
                         Team = "Red"
                     },
-                    new SummonerMatches
+                    new SummonerMatch
                     {
                         ID = 10,
                         MatchID = 1,
@@ -280,12 +271,11 @@ namespace LeagueEntities.EntityConfigurations
                         WardsPlaced = 14,
                         KeystoneRune = "Lethal Tempo",
                         MinorRune = "Resolve",
-                        Item1 = "Boots of Speed",
-                        Item2 = "Infinity Edge",
-                        Item3 = "BF Sword",
-                        Item4 = "Statikk Shiv",
-                        Item5 = "Essence Reaver",
-                        Item6 = "Death's Dance",
+                        Item1 = 1001,
+                        Item2 = 1004,
+                        Item3 = 1005,
+                        Item4 = 1007,
+                        Item5 = 1038,
                         Trinket = "Warding Totem",
                         Team = "Red"
                     }

@@ -50,6 +50,33 @@ namespace LeagueOfData.Controllers
 
             new Mapper(context).MapChampion(champs);
         }
+
+        [HttpGet("FetchItemsData")]
+        public void FetchItemsData()
+        {
+            var items = new List<Item>();
+
+            using (HttpClient client = new HttpClient())
+            {
+                using (StreamReader r = new StreamReader(
+                    $"{env.WebRootPath}/Assets/items.json"))
+                {
+                    string json = r.ReadToEnd();
+                    var array = JArray.Parse(json);
+
+                    foreach (var a in array)
+                    {
+                        items.Add(new Item
+                        {
+                            ID = a["id"].Value<int>(),
+                            ItemName = a["name"].Value<string>()
+                        });
+                    }
+                }
+            }
+
+            new Mapper(context).MapItem(items);
+        }
     }
 
     public class Mapper
@@ -76,19 +103,19 @@ namespace LeagueOfData.Controllers
                     ChampionDescription = champ.Blurb ?? string.Empty
                 };
                 context.Add(dbChamp);
-                
+
                 var dbInfo = new ChampionStats
                 {
                     ResourceType = champ.Partype,
                     Attack = champ.Info.Attack,
                     Defense = champ.Info.Defense,
-                    Magic= champ.Info.Magic,
+                    Magic = champ.Info.Magic,
                     Difficulty = champ.Info.Difficulty,
                     HitPoints = champ.Stats.Hp,
                     HitPointsPerLevel = champ.Stats.HpPerLevel,
                     ManaPoints = champ.Stats.Mp,
                     ManaPointsPerLevel = champ.Stats.MpPerLevel,
-                    MoveSpeed = champ.Stats.Movespeed, 
+                    MoveSpeed = champ.Stats.Movespeed,
                     Armor = champ.Stats.Armor,
                     ArmorPerLevel = champ.Stats.ArmorPerLevel,
                     SpellBlock = champ.Stats.Spellblock,
@@ -96,9 +123,9 @@ namespace LeagueOfData.Controllers
                     AttackRange = champ.Stats.AttackRange,
                     HitPointsRegen = champ.Stats.HpRegen,
                     HitPointsRegenPerLevel = champ.Stats.HpRegenPerLevel,
-                    ManaPointsRegen  = champ.Stats.MpRegen,
+                    ManaPointsRegen = champ.Stats.MpRegen,
                     ManaPointsRegenPerLevel = champ.Stats.MpRegenPerLevel,
-                    CritChance  = champ.Stats.Crit,
+                    CritChance = champ.Stats.Crit,
                     CritChancePerLevel = champ.Stats.CritPerLevel,
                     AttackDamage = champ.Stats.AttackDamage,
                     AttackDamagePerLevel = champ.Stats.AttackDamagePerLevel,
@@ -109,11 +136,11 @@ namespace LeagueOfData.Controllers
                 foreach (var tag in champ.Tags)
                 {
                     int tagID = 0;
-                    
+
                     switch (tag)
                     {
                         case "Fighter":
-                         tagID = 1;
+                            tagID = 1;
                             break;
 
                         case "Tank":
@@ -149,11 +176,21 @@ namespace LeagueOfData.Controllers
             context.Database.ExecuteSqlRaw("SET IDENTITY_INSERT Champions OFF;");
             context.Database.CommitTransaction();
         }
+
+        public void MapItem(List<Item> items)
+        {
+            context.Database.BeginTransaction();
+            context.Database.ExecuteSqlRaw("SET IDENTITY_INSERT Items ON");
+            context.AddRange(items);
+            context.SaveChanges();
+            context.Database.ExecuteSqlRaw("SET IDENTITY_INSERT Items OFF;");
+            context.Database.CommitTransaction();
+        }
     }
 
     public class TempChampion
     {
-        public string Id { get; set; }
+        public string ID { get; set; }
         public int Key { get; set; }
         public string Name { get; set; }
         public string Title { get; set; }

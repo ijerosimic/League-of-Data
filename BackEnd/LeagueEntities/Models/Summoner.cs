@@ -4,6 +4,13 @@ namespace LeagueEntities.Models
 {
     public class Summoner
     {
+        public Summoner()
+        {
+            SummonerChampionMasteries = new HashSet<SummonerChampionMastery>();
+            SummonerRankedLeagues= new HashSet<SummonerRankedLeague>();
+            SummonerMatches = new HashSet<SummonerMatch>();
+        }
+
         public int ID { get; set; }
         public string SummonerName { get; set; }
         public int SummonerLevel { get; set; }
@@ -14,8 +21,8 @@ namespace LeagueEntities.Models
         public int ServerID { get; set; }
 
         public Server Server { get; set; }
-        public ICollection<SummonerChampionMastery> SummonersChampionMasteries { get; set; }
+        public ICollection<SummonerChampionMastery> SummonerChampionMasteries { get; set; }
         public ICollection<SummonerRankedLeague> SummonerRankedLeagues { get; set; }
-        public ICollection<SummonerMatches> SummonerMatches { get; set; }
+        public ICollection<SummonerMatch> SummonerMatches { get; set; }
     }
 }

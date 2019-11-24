@@ -37,6 +37,8 @@ namespace LeagueServices.MatchService.Concrete
                 context.SummonerMatches
                 .Include(x => x.Champion)
                 .Include(x => x.Summoner)
+                .Include(x => x.SummonerMatchesItems)
+                .ThenInclude(x => x.Item)
                 .Where(x => x.MatchID == matchID)
                 .MapSummonerMatchesToDetailsDto()
                 .ToList());

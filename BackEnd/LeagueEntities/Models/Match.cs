@@ -5,6 +5,11 @@ namespace LeagueEntities.Models
 {
     public class Match
     {
+        public Match()
+        {
+            SummonerMatches = new HashSet<SummonerMatch>();
+        }
+
         public int ID { get; set; }
         public int SeasonNo { get; set; }
         public int MatchDuration { get; set; }
@@ -34,6 +39,6 @@ namespace LeagueEntities.Models
         public Server Server { get; set; }
         public Map Map { get; set; }
         public QueueType QueueType { get; set; }
-        public ICollection<SummonerMatches> SummonerMatches { get; set; }
+        public ICollection<SummonerMatch> SummonerMatches { get; set; }
     }
 }

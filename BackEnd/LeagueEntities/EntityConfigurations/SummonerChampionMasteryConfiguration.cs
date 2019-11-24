@@ -19,7 +19,7 @@ namespace LeagueEntities.EntityConfigurations
                 .IsRequired();
 
             builder.HasOne(m => m.Summoner)
-                .WithMany(s => s.SummonersChampionMasteries)
+                .WithMany(s => s.SummonerChampionMasteries)
                 .HasForeignKey(m => m.SummonerID)
                 .HasPrincipalKey(s => s.ID)
                 .OnDelete(DeleteBehavior.Restrict);

@@ -4,7 +4,6 @@
       <v-col cols="12">
         <v-card class="mx-auto" outlined>
           <v-card-title class="justify-center">Match Details</v-card-title>
-          <button @click="blueTeam()">CLICK AND LICK</button>
           <v-row>
             <v-col cols="6">
               <v-card v-for="summoner in blueTeam()" :key="summoner.summonerID" class="pa-5 ma-2">
@@ -15,7 +14,7 @@
                     </v-avatar>
                   </v-col>
                   <v-col cols="1" class="pa-0">
-                    <v-img :src="getRuneIcon('ArcaneComet')" height="25" width="25" class="ma-1" />
+                    <v-img :src="getRuneIcon('ArcaneComet')" height="25" width="25" class="mb-1" />
                     <v-img :src="getRuneIcon('ArcaneComet')" height="25" width="25" class="mt-2" />
                   </v-col>
                   <v-col cols="6" class="pa-1 mt-4">
@@ -70,7 +69,7 @@
               </v-card>
             </v-col>
             <v-col cols="6">
-              <v-card v-for="summoner in blueTeam()" :key="summoner.summonerID" class="pa-5 ma-2">
+              <v-card v-for="summoner in redTeam()" :key="summoner.summonerID" class="pa-5 ma-2">
                 <v-row align="center">
                   <v-col cols="2">
                     <v-avatar size="auto" tile>
@@ -81,9 +80,9 @@
                     <v-img :src="getRuneIcon('ArcaneComet')" height="25" width="25" class="mb-1" />
                     <v-img :src="getRuneIcon('ArcaneComet')" height="25" width="25" class="mt-2" />
                   </v-col>
-                  <v-col cols="6" class="pa-0 mt-4">
+                  <v-col cols="6" class="pa-1 mt-4">
                     <v-row class="text-center">
-                      <v-col cols="3">
+                      <v-col cols="4">
                         <p class="caption">Summoner</p>
                         <p class="caption">{{summoner.summonerName}}</p>
                       </v-col>
@@ -97,13 +96,13 @@
                         <p class="caption">Damage done</p>
                         <p class="caption">{{summoner.damageDone * 1000}}</p>
                       </v-col>
-                      <v-col cols="2">
+                      <v-col cols="1">
                         <p class="caption">CS</p>
                         <p class="caption">{{summoner.creepScore}}</p>
                       </v-col>
                     </v-row>
                   </v-col>
-                  <v-col cols="2">
+                  <v-col cols="2" class="ml-4">
                     <table>
                       <tr>
                         <td>

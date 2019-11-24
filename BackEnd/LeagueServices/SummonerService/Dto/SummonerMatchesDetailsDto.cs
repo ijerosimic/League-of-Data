@@ -13,12 +13,12 @@
         public decimal DamageDone { get; set; }
         public decimal GoldEarned { get; set; }
         public int WardsPlaced { get; set; }
-        public string Item1 { get; set; }
-        public string Item2 { get; set; }
-        public string Item3 { get; set; }
-        public string Item4 { get; set; }
-        public string Item5 { get; set; }
-        public string Item6 { get; set; }
+        public int Item1 { get; set; }
+        public int Item2 { get; set; }
+        public int Item3 { get; set; }
+        public int Item4 { get; set; }
+        public int Item5 { get; set; }
+        public int Item6 { get; set; }
         public string Trinket { get; set; }
         public string SummonerSpell { get; set; }
         public string SummonerSpell2 { get; set; }

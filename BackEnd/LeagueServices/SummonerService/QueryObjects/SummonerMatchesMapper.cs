@@ -8,7 +8,7 @@ namespace LeagueServices.SummonerService.QueryObjects
     public static class SummonerMatchesMapper
     {
         public static IQueryable<SummonerMatchesDto> MapSummonerMatchesToDto(
-            this IQueryable<SummonerMatches> summonerMatches)
+            this IQueryable<SummonerMatch> summonerMatches)
         {
             return summonerMatches
                 .Select(x => new SummonerMatchesDto
@@ -28,7 +28,7 @@ namespace LeagueServices.SummonerService.QueryObjects
         }
 
         public static IQueryable<MatchSummonerDetailsDto> MapSummonerMatchesToDetailsDto(
-            this IQueryable<SummonerMatches> summonerMatches)
+            this IQueryable<SummonerMatch> summonerMatches)
         {
             return summonerMatches
                 .Select(x => new MatchSummonerDetailsDto
@@ -50,7 +50,7 @@ namespace LeagueServices.SummonerService.QueryObjects
                     Item5 = x.Item5,
                     Item6 = x.Item6,
                     Trinket = x.Trinket,
-                    SummonerSpell = x.SummonerSpell,
+                    SummonerSpell = x.SummonerSpell1,
                     SummonerSpell2 = x.SummonerSpell2,
                     KeystoneRune = x.KeystoneRune,
                     MinorRune = x.MinorRune,
