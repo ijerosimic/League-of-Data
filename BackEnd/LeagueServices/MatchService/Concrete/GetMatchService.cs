@@ -33,8 +33,10 @@ namespace LeagueServices.MatchService.Concrete
                 .MapMatchToDetailedDto()
                 .FirstOrDefault();
 
-            matches.SummonerMatchDetails.AddRange(
+            matches.SummonerDetails.AddRange(
                 context.SummonerMatches
+                .Include(x => x.Champion)
+                .Include(x => x.Summoner)
                 .Where(x => x.MatchID == matchID)
                 .MapSummonerMatchesToDetailsDto()
                 .ToList());

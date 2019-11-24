@@ -1,7 +1,11 @@
 ﻿namespace LeagueServices.SummonerService.Dto
 {
-    public class SummonerMatchesDetailsDto : SummonerMatchesDto
+    public class MatchSummonerDetailsDto : SummonerMatchesDto
     {
+        public int SummonerID { get; set; }
+        public string SummonerName { get; set; }
+        public string ChampionName { get; set; }
+        public int CreepScore { get; set; }
         public int Kills { get; set; }
         public int Deaths { get; set; }
         public int Assists { get; set; }

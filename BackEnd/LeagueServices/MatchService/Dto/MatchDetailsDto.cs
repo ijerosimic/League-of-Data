@@ -8,7 +8,7 @@ namespace LeagueServices.MatchService.Dto
     {
         public MatchDetailsDto()
         {
-            SummonerMatchDetails = new List<SummonerMatchesDetailsDto>();
+            SummonerDetails = new List<MatchSummonerDetailsDto>();
         }
 
         public long ID { get; set; }
@@ -36,6 +36,6 @@ namespace LeagueServices.MatchService.Dto
         public int RedTeamBarons { get; set; }
         public int RedTeamElderDragons { get; set; }
         public string Winner { get; set; }
-        public List<SummonerMatchesDetailsDto> SummonerMatchDetails { get; set; }
+        public List<MatchSummonerDetailsDto> SummonerDetails { get; set; }
     }
 }

@@ -2,6 +2,7 @@ import Home from "./components/Home.vue"
 import SummonerDashboard from "./components/SummonerDashboard.vue"
 import SummonerDetails from "./components/SummonerDetails.vue"
 import MatchDetails from "./components/MatchDetails.vue"
+import Test from "./components/Test.vue"
 
 const routes = [{
         path: '/',
@@ -18,6 +19,10 @@ const routes = [{
     {
         path: '/matches/:id',
         component: MatchDetails
+    },
+    {
+        path: '/test',
+        component: Test
     }
 ]
 

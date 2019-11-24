@@ -27,12 +27,15 @@ namespace LeagueServices.SummonerService.QueryObjects
                 });
         }
 
-        public static IQueryable<SummonerMatchesDetailsDto> MapSummonerMatchesToDetailsDto(
+        public static IQueryable<MatchSummonerDetailsDto> MapSummonerMatchesToDetailsDto(
             this IQueryable<SummonerMatches> summonerMatches)
         {
             return summonerMatches
-                .Select(x => new SummonerMatchesDetailsDto
+                .Select(x => new MatchSummonerDetailsDto
                 {
+                    SummonerID = x.SummonerID,
+                    SummonerName = x.Summoner.SummonerName,
+                    ChampionName = x.Champion.ChampionName,
                     Kills = x.Kills,
                     Deaths = x.Deaths,
                     Assists = x.Assists,
