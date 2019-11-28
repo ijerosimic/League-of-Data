@@ -2,8 +2,42 @@
   <v-container fluid>
     <v-row>
       <v-col cols="12">
-        <v-card class="mx-auto" outlined>
+        <v-card class="text-center" outlined>
           <v-card-title class="justify-center">Match Details</v-card-title>
+          <v-card-text>
+            <v-simple-table>
+              <tr>
+                <td>CLASSIC</td>
+                <td>SUMMONER'S RIFT</td>
+                <td>MATCH CREATION</td>
+                <td>MATCH DURATION</td>
+              </tr>
+            </v-simple-table>
+          </v-card-text>
+          <v-row class="text-center">
+            <v-col cols-6>
+              <v-row>
+                <v-col cols="1"></v-col>
+                <v-col cols="2" v-for="(item, index) in this.objectives" :key="index" size="auto">
+                  <v-avatar size="auto" tile>
+                    <v-img :src="getChampIcon('Akali')" height="25" width="25" />
+                  </v-avatar>
+                  <p style="float:right;">{{teamHeader('blue', item)}}</p>
+                </v-col>
+              </v-row>
+            </v-col>
+            <v-col cols-6>
+              <v-row>
+                <v-col cols="1"></v-col>
+                <v-col cols="2" v-for="n in 5" :key="n" size="auto">
+                  <v-avatar size="auto" tile>
+                    <v-img :src="getChampIcon('Akali')" height="25" width="25" />
+                  </v-avatar>
+                  <p style="float:right;">1 Dragon</p>
+                </v-col>
+              </v-row>
+            </v-col>
+          </v-row>
           <v-row>
             <v-col cols="6">
               <v-card v-for="summoner in blueTeam()" :key="summoner.summonerID" class="pa-5 ma-2">
@@ -142,7 +176,9 @@
 import { mapActions, mapGetters } from "vuex";
 export default {
   data() {
-    return {};
+    return {
+      objectives: ["Dragon", "Elder", "Baron", "Gold", "Kills", "Turrets"]
+    };
   },
   computed: {
     ...mapGetters({
@@ -151,7 +187,6 @@ export default {
   },
   methods: {
     blueTeam() {
-      console.log(this.match.summonerDetails);
       if (this.match.summonerDetails)
         return this.match.summonerDetails.filter(x => x.team === "Blue");
     },
@@ -167,6 +202,18 @@ export default {
     },
     getRuneIcon(val) {
       return require(`../assets/images/runes/${val}/${val}.png`);
+    },
+    teamHeader(side, objective) {
+      return Object.keys(this.match)
+        .sort((a, b) => a.localeCompare(b))
+        .filter(
+          x =>
+            x.toUpperCase().includes(side.toUpperCase()) &&
+            x.toUpperCase().includes(objective.toUpperCase())
+        )
+        .reduce((o, k) => {
+          return this.match[k];
+        }, {});
     }
   },
   watch: {},

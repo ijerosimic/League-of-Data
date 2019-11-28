@@ -18,18 +18,18 @@ namespace LeagueEntities.Models
         public string GameType { get; set; }
         public int TotalKills { get; set; }
         public int TotalGold { get; set; }
-        public int BlueTeamKills { get; set; }
-        public int BlueTeamGold { get; set; }
-        public int BlueTeamTurrets { get; set; }
-        public int BlueTeamDragons { get; set; }
-        public int BlueTeamBarons { get; set; }
-        public int BlueTeamElderDragons { get; set; }
-        public int RedTeamKills { get; set; }
-        public int RedTeamGold { get; set; }
-        public int RedTeamTurrets { get; set; }
-        public int RedTeamDragons { get; set; }
-        public int RedTeamBarons { get; set; }
-        public int RedTeamElderDragons { get; set; }
+        public int BlueKills { get; set; }
+        public int BlueGold { get; set; }
+        public int BlueTurrets { get; set; }
+        public int BlueDragons { get; set; }
+        public int BlueBarons { get; set; }
+        public int BlueElder { get; set; }
+        public int RedKills { get; set; }
+        public int RedGold { get; set; }
+        public int RedTurrets { get; set; }
+        public int RedDragons { get; set; }
+        public int RedBarons { get; set; }
+        public int RedElder { get; set; }
         public string Winner { get; set; }
 
         public int ServerID { get; set; }
