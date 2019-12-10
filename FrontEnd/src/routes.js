@@ -1,19 +1,19 @@
-import Home from "./components/Home.vue"
-import SummonerDashboard from "./components/SummonerDashboard.vue"
-import SummonerDetails from "./components/SummonerDetails.vue"
-import MatchDetails from "./components/MatchDetails.vue"
+import AppHome from "./components/home/AppHome.vue"
+import Summoners from "./components/summoners/Index.vue"
+import SummonerDetails from "./components/summoners/SummonerDetails.vue"
+import MatchDetails from "./components/matches/MatchDetails.vue"
 import Test from "./components/Test.vue"
 
 const routes = [{
         path: '/',
-        component: Home,
+        component: AppHome,
         alias: '/index'
     }, {
-        path: '/summoners/dashboard',
-        component: SummonerDashboard
+        path: '/summoners',
+        component: Summoners
     },
     {
-        path: '/summoners/:name',
+        path: '/summoners/details/:name',
         component: SummonerDetails
     },
     {

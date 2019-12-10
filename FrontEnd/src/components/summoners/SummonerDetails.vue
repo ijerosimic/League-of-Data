@@ -131,7 +131,7 @@ export default {
   },
   methods: {
     getProfileIcon(val) {
-      if (val) return require(`../assets/images/profileIcons/${val}.png`);
+      if (val) return require(`../../assets/images/profileIcons/${val}.png`);
     },
     getChampAvatar() {
       return "https://ddragon.leagueoflegends.com/cdn/9.22.1/img/champion/Aatrox.png";

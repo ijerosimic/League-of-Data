@@ -70,10 +70,10 @@ export default {
   },
   methods: {
     getSrc(val) {
-      return require(`../assets/images/profileIcons/${val}.png`);
+      return require(`../../assets/images/profileIcons/${val}.png`);
     },
     getDetails(name) {
-      this.$router.push(`/summoners/${name}`);
+      this.$router.push(`/summoners/details/${name}`);
     }
   },
   watch: {

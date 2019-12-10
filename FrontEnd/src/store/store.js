@@ -7,7 +7,7 @@ import matches from './modules/matches'
 
 Vue.use(Vuex)
 
-export const store = new Vuex.Store({
+export default new Vuex.Store({
     modules: {
         summoners,
         servers,
